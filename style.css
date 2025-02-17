@@ -1,0 +1,222 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ........ function bar ......... */
+
+.functions-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    background: rgba(197, 197, 197, 0.308);
+}
+.box1,
+.box2{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+.box1{
+    margin-right: 60px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    align-items: center;
+}
+.language-btn{
+    padding: 5px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    background: white;
+}
+
+.flages{
+    display: flex;
+    gap: 10px;
+}
+.flages>img{
+    width: 20px;
+    cursor: pointer;
+}
+.drp{
+    display: none;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+@media screen and (max-width: 640px) {
+    .box1,
+    .box2{
+        display: none;
+    }
+    .drp{
+        display: flex;
+    }
+}
+
+/* ........ navbar ......... */
+
+nav{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    background: white;
+    padding: 0px 30px;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 230px;
+    cursor: pointer;
+}
+.logo>img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.menu-items{
+    display: flex;
+    gap: 10px;
+}
+.menu-item{
+    display: flex;
+    padding: 10px 10px 6px 10px;
+}
+
+.menu-item>span{
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+}
+.menu-item>span::after{
+    content: '';
+    height: 2px;
+    display: block;
+    transition: 0.5s;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #8dc63f;
+    transition: 0.5s;
+}
+.menu-item>span:hover::after{
+    width: 100%;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    padding: 12px 25px;
+    border: 1px solid #0d6db7;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn:hover{
+    transform: scale(10px);
+}
+.btn1{
+    background: #0d6db7;
+}
+.btn2{
+    background: #8dc63f;
+}
+.bars-label{
+    display: none;
+}
+.bars{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    border-radius: 10px;
+}
+#navbar-toggle{
+    display: none;
+}
+@media screen and (max-width: 1535px) {
+    
+}
+@media screen and (max-width: 1280px) {
+    nav{
+        position: relative;
+        justify-content: space-between;
+    }
+    .menu{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        column-gap: 10px;
+        left: 0%;
+        top: 90px;
+        transform: scaleY(0%);
+        transition: 0.5s;
+        transform-origin: top;
+        background: white;
+        padding: 15px 30px;
+    }
+    #navbar-toggle:checked ~ div.menu{
+        transform: scaleY(100%);
+    }
+    .menu-items{
+        width: 100%;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .menu-item{
+        display: flex;
+        width: 100%;
+    }
+    .btns{
+        width: 100%;
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .btn{
+        text-align: center;
+    }
+    .bars-label{
+        display: block;
+    }
+}
+
+/* ....... main body ......... */
