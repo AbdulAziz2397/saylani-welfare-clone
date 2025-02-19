@@ -2,7 +2,43 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", serif;
+}
+
+
+
+/* ..........  container div ........... */
+
+
+
+
+.container{
+    width: 100%;
+}
+@media screen and (max-width: 2560px) {
+    .container{
+        max-width: 1536px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .container{
+        max-width: 1280px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 976px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container{
+        max-width: 425px;
+    }
 }
 
 /* ........ function bar ......... */
@@ -10,11 +46,14 @@
 .functions-bar{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    height: auto;
-    padding: 10px;
+    justify-content: center;
     align-items: center;
-    background: rgba(197, 197, 197, 0.308);
+    padding: 10px;
+    background: #EEEEEE;
+}
+.functions-bar-container{
+    display: flex;
+    justify-content: space-between;
 }
 .box1,
 .box2{
@@ -28,7 +67,7 @@
 .boxes{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
 }
 .box{
     display: flex;
@@ -40,10 +79,17 @@
     align-items: center;
 }
 .language-btn{
-    padding: 5px 12px;
-    border: 1px solid rgba(0, 0, 0, 0.274);
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 2px;
+    color: rgb(85, 85, 85);
     cursor: pointer;
     background: white;
+    font-size: 14px;
 }
 
 .flages{
@@ -62,8 +108,12 @@
     align-items: center;
     border: 1px solid black;
     border-radius: 50px;
+    cursor: pointer;
 }
 @media screen and (max-width: 640px) {
+    .functions-bar-container{
+        justify-content: center;
+    }
     .box1,
     .box2{
         display: none;
@@ -76,19 +126,20 @@
 /* ........ navbar ......... */
 
 nav{
-    height: 110px;
     width: 100%;
+    height: 85px;
+    z-index: 100;
+    padding: 0px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0px;
-    align-items: center;
     background: white;
-    padding: 0px 30px;
-    flex-wrap: wrap;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.205);
 }
 .logo{
-    width: 230px;
+    width: 220px;
     cursor: pointer;
 }
 .logo>img{
@@ -187,7 +238,7 @@ nav{
         flex-direction: column;
         column-gap: 10px;
         left: 0%;
-        top: 90px;
+        top: 110px;
         transform: scaleY(0%);
         transition: 0.5s;
         transform-origin: top;
@@ -219,4 +270,228 @@ nav{
     }
 }
 
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 /* ....... main body ......... */
+
+
+.main-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.main-body-container{
+    display: flex;
+    height: 560px;
+    justify-content: center;
+}
+.main-body-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: auto;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.largest-h{
+    font-size: 38px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-style: normal;
+}
+.green-text{
+    color: #8dc63f;
+}
+.jamni-text{
+    color: #0d6db7;
+}
+.text-one{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-style: normal;
+}
+.main-body-pera{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #797979;
+}
+.main-body-btn>span{
+    font-size: 14px;
+    display: flex;
+    width: 220px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid black;
+    height: 50px;
+    cursor: pointer;
+}
+.main-img{
+    width: 100%;
+    padding: 20px;
+}
+.main-img>img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 2560px) {
+    .main-body-text{
+        max-width: 768px;
+    }
+    .main-img{
+        max-width: 786px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .main-body-text{
+        max-width: 640px;
+    }
+    .main-img{
+        max-width: 640px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-body-text{
+        max-width: 768px;
+    }
+    .main-img{
+        max-width: 786px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container{
+        max-width: 425px;
+    }
+}
+
+/* .......... donate bar ............ */
+
+.donate-bar{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0fcda;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.amount-input{
+    background: #424242;
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.set-amount-input{
+    height: 100%;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px;
+}
+.genral{
+    
+    padding: 15px;
+}
+.Rs{
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+.donate-bar-btns{
+    display: flex;
+    gap: 20px;
+}
+.U-btn{
+    font-size: 14px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.U-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    background: #424242;
+    color: white;
+}
+.donate-btn{
+    background: #8dc63f;
+    color: white;
+}
+.donate-btn:hover{
+    background: #8dc63f;
+}
+
+/* .......... slider imgs ......... */
+
+.slider-imgs{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slide-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border: 1px solid white;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+.slide-img>img{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.slide-img-one{
+    animation: fade1 5s infinite;
+}
+.slide-img-two{
+    animation: fade2 5s infinite 5s;
+}
+.slide-btn{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+@keyframes fade1 {
+    0%, 100% { opacity: 1; z-index: 1; }
+    50% { opacity: 0; z-index: 0; }
+}
+
+@keyframes fade2 {
+    0%, 100% { opacity: 0; z-index: 0; }
+    50% { opacity: 1; z-index: 1; }
+}
