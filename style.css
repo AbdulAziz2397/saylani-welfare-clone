@@ -627,6 +627,9 @@ nav{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 .service-card{
     width: 232px;
@@ -639,7 +642,6 @@ nav{
     border-radius: 5px;
     padding: 20px;
     column-gap: 20px;
-    gap: 10px;
 }
 .service-icon{
     height: 100%;
@@ -656,7 +658,14 @@ nav{
 }
 @media screen and (max-width: 1024px) {
     .service-card{
-        width: 232px;
+        width: 100%;
+        max-width: 252px;
+    }
+}
+@media screen and (max-width: 524px) {
+    .service-card{
+        width: 100%;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 768px) {
