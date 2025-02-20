@@ -553,6 +553,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .ACI-containere{
     display: flex;
@@ -618,4 +619,58 @@ nav{
     font-weight: 600;
     line-height: 1.35;
     text-wrap: wrap;
+}
+
+/* .............. services .............. */
+
+.services-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.service-card{
+    width: 232px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #B6EF4933;
+    border-radius: 5px;
+    padding: 20px;
+    column-gap: 20px;
+    gap: 10px;
+}
+.service-icon{
+    height: 100%;
+}
+@media screen and (max-width: 2560px) {
+    .service-card{
+        width: 189px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .service-card{
+        width: 149px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .service-card{
+        width: 232px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container{
+        max-width: 425px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container{
+        max-width: 100%;
+    }
 }
