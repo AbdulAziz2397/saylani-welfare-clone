@@ -742,10 +742,12 @@ nav {
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-.service-card:hover{
+
+.service-card:hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
+
 .service-title {
     margin-top: 10px;
     font-size: 18px;
@@ -757,6 +759,7 @@ nav {
         grid-template-columns: repeat(6, minmax(200px, 1fr));
     }
 }
+
 @media screen and (max-width: 1350px) {
     .services-container {
         grid-template-columns: repeat(3, minmax(180px, 1fr));
@@ -785,11 +788,13 @@ nav {
     gap: 30px;
     margin-top: 30px;
 }
+
 @media screen and (max-width: 990px) {
-    .fund-container{
+    .fund-container {
         flex-wrap: wrap;
     }
 }
+
 .fund-box {
     width: 100%;
     height: 300px;
@@ -804,25 +809,30 @@ nav {
     background-blend-mode: darken;
     border-radius: 10px;
 }
-.fund-box:hover{
+
+.fund-box:hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
+
 .fund-box1 {
     background: rgba(0, 0, 0, 0.466) url(./assets/images/fund\ 1.jpg);
 }
+
 .fund-box2 {
     background: rgba(0, 0, 0, 0.466) url(./assets/images/fund\ 2.jpg);
 }
+
 .fund-box3 {
     background: rgba(0, 0, 0, 0.466) url(./assets/images/fund\ 3.jpg);
 }
 
-.fund-title{
+.fund-title {
     font-size: 16px;
     color: white;
 }
-.fund-btn{
+
+.fund-btn {
     width: 100%;
     height: 50px;
     display: flex;
@@ -838,7 +848,7 @@ nav {
 /* ..................... result section ...................... */
 
 
-.result-container{
+.result-container {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -846,18 +856,27 @@ nav {
     margin: 30px 0px;
     padding: 120px 0px;
 }
-.result-box{
+
+@media screen and (max-width: 1024px) {
+    .result-container{
+        flex-wrap: wrap;
+    }
+}
+
+.result-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 20px;
 }
-.result-box>span{
+
+.result-box>span {
     color: white;
     font-size: 20px;
 }
-.img-box{
+
+.img-box {
     width: 140px;
     height: 140px;
     background: white;
@@ -867,9 +886,76 @@ nav {
     align-items: center;
 }
 
+
+/* ................director section................ */
+
+.director-container{
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 40px 0px;
+}
+.director-img-box{
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.director-img-box>img{
+    width: 100%;
+    border-radius: 50%;
+}
+.director-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.director-title{
+    font-size: 20px;
+    color: #0D6DB7;
+    font-weight: 600;
+}
+.director-catg{
+    font-size: 14px;
+}
+.about-director{
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+.director-btns{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+.d-btn{
+    width: 50px;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dBtn-2{
+    color: white;
+    background: #8dc63f;
+}
+
+
+
+
 /* ..............  guid section ................. */
 
-.guid-container{
+.guid-container {
     background: #1c73b4;
     padding: 40px 20px;
     margin-bottom: 30px;
@@ -878,14 +964,16 @@ nav {
     flex-direction: column;
     display: flex;
 }
-.guid-heading{
+
+.guid-heading {
     font-size: 40px;
     text-transform: capitalize;
     color: white;
     font-weight: 500;
     margin-bottom: 20px;
 }
-.guid-input{
+
+.guid-input {
     width: 100%;
     max-width: 500px;
     height: 70px;
@@ -898,11 +986,13 @@ nav {
     color: white;
     margin-bottom: 20px;
 }
+
 .guid-input::placeholder {
     color: rgb(255, 255, 255);
     opacity: 0.5;
 }
-.guid-btn{
+
+.guid-btn {
     width: 100%;
     max-width: 500px;
     display: flex;
@@ -927,68 +1017,81 @@ nav {
 
 /* .......................footer...................... */
 
-footer{
+footer {
     width: 100%;
-    background:#424242  no-repeat;
+    background: #424242;
     background-size: cover;
-    /* url(./assets/images/footer\ background.png) */
     background-position: center;
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
-.footer-box{
+
+.footer-box {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-.footer-logo>img{
+
+.footer-logo>img {
     width: 300px;
 }
-.footer-icons{
+
+.footer-icons {
     padding-left: 20px;
 }
-.footer-icons>img{
+
+.footer-icons>img {
     width: 40px;
 }
-.twitter{
+
+.twitter {
     width: 60px;
 }
 
-.footer-boxes{
+.footer-boxes {
     width: 100%;
     display: flex;
     gap: 20px;
     justify-content: space-between;
 }
-.footer-box>ul{
+
+.footer-box>ul {
     list-style: none;
 }
-.footer-box>ul>li{
+
+.footer-box>ul>li {
     color: white;
     font-size: 16px;
     margin-bottom: 15px;
 }
-.footer-box>ul>li.hli{
+
+.footer-box>ul>li.hli {
     font-size: 20px;
     font-weight: 600;
 }
+
 @media screen and (max-width: 1120px) {
-    .footer-container{
+    .footer-container {
         flex-wrap: wrap;
     }
-    .footer-box{
+
+    .footer-box {
         margin-bottom: 30px;
         padding: 10px;
 
     }
 }
+
 @media screen and (max-width: 768px) {
-    .footer-logo>img{
+    .footer-logo>img {
         width: 260px;
     }
 }
