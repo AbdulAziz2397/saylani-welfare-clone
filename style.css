@@ -1015,9 +1015,9 @@ nav {
     right: 50%;
 }
 
-/* ..............  guid section ................. */
+/* ..............  guide section ................. */
 
-.guid-container {
+.guide-container {
     background: #1c73b4;
     padding: 40px 20px;
     margin-bottom: 30px;
@@ -1027,7 +1027,7 @@ nav {
     display: flex;
 }
 
-.guid-heading {
+.guide-heading {
     font-size: 40px;
     text-transform: capitalize;
     color: white;
@@ -1035,7 +1035,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.guid-input {
+.guide-input {
     width: 100%;
     max-width: 500px;
     height: 70px;
@@ -1049,12 +1049,12 @@ nav {
     margin-bottom: 20px;
 }
 
-.guid-input::placeholder {
+.guide-input::placeholder {
     color: rgb(255, 255, 255);
     opacity: 0.5;
 }
 
-.guid-btn {
+.guide-btn {
     width: 100%;
     max-width: 500px;
     display: flex;
